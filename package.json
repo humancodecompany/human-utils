@@ -1,7 +1,7 @@
 {
-  "name": "human-utils",
+  "name": "@humancode_co/human-utils",
   "version": "1.0.0",
-  "description": "",
+  "description": "A helpful library for javascript/typescript developers. :) Includes a lot of reusable functions to make easy you code process.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,13 +12,18 @@
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/humancodecompany/human-utils.git"
   },
-  "keywords": ["utils", "human code", "human code company"],
+  "keywords": [
+    "utils",
+    "human code",
+    "human code company"
+  ],
   "author": "human code co.",
   "license": "ISC",
   "homepage": "https://github.com/humancodecompany/human-utils.git#readme",
@@ -26,11 +31,19 @@
     "cpf-cnpj-validator": "^1.0.3",
     "date-fns": "^2.19.0"
   },
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "devDependencies": {
     "prettier": "^2.2.1",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.2.3"
+  },
+  "bugs": {
+    "url": "https://github.com/humancodecompany/human-utils/issues"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
