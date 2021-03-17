@@ -6,17 +6,18 @@ Includes a lot of reusable functions to make easy you code process.
 # Get started
 
 ```ts
-npm install human-utils
+npm install @humancode_co/utils
 // or with yarn
-yarn add human-utils
+yarn add @humancode_co/utils
 ```
 
 ## Documentation
 
 ```ts
-import { moneyMask } from 'human-utils';
+import { object } from '@humancode_co/utils';
 
-moneyMask('10');
-// > R$ 10,00
+object.isEmpty({})
+// > true
+
 ```
 
