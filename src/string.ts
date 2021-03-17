@@ -37,7 +37,7 @@ export default {
             if (letter) {
                 // @ts-ignore
                 const regEx = mapHex[letter];
-                _string = string.replace(regEx, letter);
+                _string = _string.replace(regEx, letter);
             }
         }
 
