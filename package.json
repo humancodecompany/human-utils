@@ -1,8 +1,8 @@
 {
   "name": "@humancode_co/utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A helpful library for javascript/typescript developers. :) Includes a lot of reusable functions to make easy you code process.",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
