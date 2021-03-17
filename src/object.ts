@@ -1,13 +1,4 @@
 export default {
-    getNestedPropertyValue(object: any, nestedProperty: string) {
-        let obj = object;
-        const split = nestedProperty.split('.');
-        for (let z = 0; z < split.length; z++) {
-            obj = obj[split[z]];
-        }
-        return obj;
-    },
-
     isEmpty(obj: any): boolean {
         return Object.keys(obj).length === 0;
      },
@@ -32,25 +23,34 @@ export default {
         return concat;
     },
 
-    compareArraysDifferent(aArray: [] = [], bArray: [] = [], findProperty: any, ...comparisonPropertyList: [any]): boolean {
-        return this.compareArraysDifferentSingleWay(aArray, bArray, findProperty, ...comparisonPropertyList)
-            || this.compareArraysDifferentSingleWay(bArray, aArray, findProperty, ...comparisonPropertyList);
-    },
+    // getNestedPropertyValue(object: any, nestedProperty: string) {
+    //     let obj = object;
+    //     const split = nestedProperty.split('.');
+    //     for (let z = 0; z < split.length; z++) {
+    //         obj = obj[split[z]];
+    //     }
+    //     return obj;
+    // },
 
-    compareArraysDifferentSingleWay(aArray: [] = [], bArray: [] = [], findProperty: any, ...comparisonPropertyList: [any]): boolean {
-        let anyDiff = false;
+    // compareArraysDifferent(aArray: [] = [], bArray: [] = [], findProperty: any, ...comparisonPropertyList: [any]): boolean {
+    //     return this.compareArraysDifferentSingleWay(aArray, bArray, findProperty, ...comparisonPropertyList)
+    //         || this.compareArraysDifferentSingleWay(bArray, aArray, findProperty, ...comparisonPropertyList);
+    // },
 
-        aArray.forEach((aElem) => {
-            const findElem = bArray.find((bElem) => this.getNestedPropertyValue(bElem, findProperty) === this.getNestedPropertyValue(aElem, findProperty));
-            if (!findElem) {
-                anyDiff = true;
-            } else {
-                comparisonPropertyList.forEach((property) => {
-                    if (this.getNestedPropertyValue(findElem, property) !== this.getNestedPropertyValue(aElem, property)) anyDiff = true;
-                });
-            }
-        });
-
-        return anyDiff;
-    }, //
+    // compareArraysDifferentSingleWay(aArray: [] = [], bArray: [] = [], findProperty: any, ...comparisonPropertyList: [any]): boolean {
+    //     let anyDiff = false;
+    //
+    //     aArray.forEach((aElem) => {
+    //         const findElem = bArray.find((bElem) => this.getNestedPropertyValue(bElem, findProperty) === this.getNestedPropertyValue(aElem, findProperty));
+    //         if (!findElem) {
+    //             anyDiff = true;
+    //         } else {
+    //             comparisonPropertyList.forEach((property) => {
+    //                 if (this.getNestedPropertyValue(findElem, property) !== this.getNestedPropertyValue(aElem, property)) anyDiff = true;
+    //             });
+    //         }
+    //     });
+    //
+    //     return anyDiff;
+    // },
 };
