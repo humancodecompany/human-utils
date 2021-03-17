@@ -12,7 +12,7 @@ export default {
         return Object.keys(obj).length === 0;
      },
 
-    getKeyName(obj: any): String[] {
+    getKeyName(obj: any): string[] {
         const concat = [];
         if (Object.keys(obj).length) {
             // eslint-disable-next-line no-restricted-syntax,guard-for-in
