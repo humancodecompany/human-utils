@@ -1,6 +1,6 @@
 {
   "name": "@humancode_co/utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A helpful library for javascript/typescript developers. :) Includes a lot of reusable functions to make easy you code process.",
   "main": "index.js",
   "scripts": {
