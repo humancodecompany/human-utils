@@ -1,5 +1,5 @@
 {
-  "name": "@humancode_co/human-utils",
+  "name": "@humancode_co/utils",
   "version": "1.0.0",
   "description": "A helpful library for javascript/typescript developers. :) Includes a lot of reusable functions to make easy you code process.",
   "main": "index.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/humancodecompany/human-utils.git"
+    "url": "git+https://github.com/humancodecompany/utils.git"
   },
   "keywords": [
     "utils",
@@ -26,7 +26,7 @@
   ],
   "author": "human code co.",
   "license": "ISC",
-  "homepage": "https://github.com/humancodecompany/human-utils.git#readme",
+  "homepage": "https://github.com/humancodecompany/utils.git#readme",
   "dependencies": {
     "cpf-cnpj-validator": "^1.0.3",
     "date-fns": "^2.19.0"
@@ -41,7 +41,7 @@
     "typescript": "^4.2.3"
   },
   "bugs": {
-    "url": "https://github.com/humancodecompany/human-utils/issues"
+    "url": "https://github.com/humancodecompany/utils/issues"
   },
   "directories": {
     "lib": "lib"
