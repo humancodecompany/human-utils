@@ -25,7 +25,7 @@
     "human code company"
   ],
   "author": "human code co.",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/humancodecompany/utils.git#readme",
   "dependencies": {
     "cpf-cnpj-validator": "^1.0.3",
