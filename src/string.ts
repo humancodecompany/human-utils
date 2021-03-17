@@ -34,9 +34,11 @@ export default {
 
         // eslint-disable-next-line no-restricted-syntax,guard-for-in
         for (const letter in mapHex) {
-            // @ts-ignore
-            const regEx = mapHex[letter];
-            string = string.replace(regEx, letter);
+            if (letter) {
+                // @ts-ignore
+                const regEx = mapHex[letter];
+                string = string.replace(regEx, letter);
+            }
         }
 
         return string;
