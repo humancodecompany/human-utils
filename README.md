@@ -1,7 +1,7 @@
 # Human Code Utils
 
 A helpful library for javascript/typescript developers. :)
-Includes a lot of reusable functions to make easy you code process.
+Includes a lot of reusable functions to make easy your code process.
 
 # Get started
 
