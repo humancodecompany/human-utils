@@ -1,8 +1,8 @@
 export default {
    /** Method used to generate a random password
-   * @param { Number } size         : max password characters size
-   * @return { String } password    : a random password
-   */
+    * @param { Number } size         : max password characters size
+    * @return { String } password    : a random password
+    */
     passwordGenerator(size: number): string {
         let pass = '';
 
