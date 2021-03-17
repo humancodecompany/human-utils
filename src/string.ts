@@ -21,7 +21,7 @@ export default {
     },
 
     accentRemover(str: string = ''): string {
-        let string = str;
+        let _string = str;
         const mapHex: MapHex = {
             a: /[\xE0-\xE6]/g,
             e: /[\xE8-\xEB]/g,
@@ -37,11 +37,11 @@ export default {
             if (letter) {
                 // @ts-ignore
                 const regEx = mapHex[letter];
-                string = string.replace(regEx, letter);
+                _string = string.replace(regEx, letter);
             }
         }
 
-        return string;
+        return _string;
     },
 
     copyText(str: string = ''): void {
