@@ -17,13 +17,15 @@ export default {
         if (Object.keys(obj).length) {
             // eslint-disable-next-line no-restricted-syntax,guard-for-in
             for (const key in obj) {
-                const keyName = this.getKeyName(obj[key]);
-                if (keyName.length) {
-                    for (let i = 0; i < keyName.length; i++) {
-                        concat.push(`${key}.${keyName[i]}`);
+                if (key) {
+                    const keyName = this.getKeyName(obj[key]);
+                    if (keyName.length) {
+                        for (let i = 0; i < keyName.length; i++) {
+                            concat.push(`${key}.${keyName[i]}`);
+                        }
+                    } else {
+                        concat.push(key);
                     }
-                } else {
-                    concat.push(key);
                 }
             }
         }
