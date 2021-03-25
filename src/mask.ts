@@ -44,9 +44,9 @@ export default {
      * @param { String } cep            : string to mask
      */
     cepMask(cep: string = ''): string {
-        return cep
-            .replace(/\D/g, '')
-            .replace(/(\d{5})(\d{3})\d+?$/, '$1-$2');
+         return cep.replace(/\D/g, '')
+            .replace(/(\d{5})(\d)/, '$1-$2')
+            .replace(/(-\d{3})\d+?$/, '$1');
     },
 
     /**
