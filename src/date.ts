@@ -3,6 +3,7 @@ import endOfDay from 'date-fns/endOfDay';
 import format from 'date-fns/format';
 import startOfDay from 'date-fns/startOfDay';
 import sub from 'date-fns/sub';
+import string from './string';
 
 export default {
     getInitialDate(days: number): number | string {
@@ -72,4 +73,13 @@ export default {
 
         return { date, time };
     },
+
+    sortByDate(items: Array<{[key: string]: Date | any}> | Array<Date>, property: string, desc?: boolean) {
+        return (items || []).sort((a, b) => {
+            const valueA = a?.[property] || a;
+            const valueB = b?.[property] || b;
+            return new Date(desc ? valueA : valueB).getTime() - new Date(desc ? valueB : valueA).getTime();
+        });
+    },
+
 };
