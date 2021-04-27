@@ -82,4 +82,40 @@ export default {
         });
     },
 
+    calcDiffereceTime(date1: Date, date2: Date) {
+        const begin = Number(date1);
+        const end = Number(date2);
+
+        const diffTime = Math.abs(begin - end);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        return diffDays;
+    },
+
+    biggerThen(startDate: Date, endDate: Date) {
+        const begin = Number(startDate);
+        const end = Number(endDate);
+        return begin > end;
+    },
+
+    addHoursFromDate(date: Date, hours: number = 0) {
+        const newDate = new Date(date);
+        return newDate.setHours(newDate.getHours() + hours);
+    },
+
+    removeHoursFromDate(date: Date, hours: number = 0) {
+        const newDate = new Date(date);
+        return newDate.setHours(newDate.getHours() - hours);
+    },
+
+    addDaysFromDate(date: Date, days: number = 0) {
+        const newDate = new Date(date);
+        return newDate.setDate(newDate.getDate() + days);
+    },
+
+    removeDaysFromDate(date: Date, days: number = 0) {
+        const newDate = new Date(date);
+        return newDate.setDate(newDate.getDate() - days);
+    },
+
 };
